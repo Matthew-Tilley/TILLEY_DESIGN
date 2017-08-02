@@ -1,0 +1,201 @@
+*
+{
+	margin:						0;
+	padding:					0;
+	font-size:					10px;
+
+}
+
+body
+{
+	display:					grid;
+	grid-template-rows: 		30vh;	
+	grid-template-areas: 		"SEC01"
+								"SEC02"
+								"SEC03";
+									
+	background-color:			#303030;
+}
+
+
+#test
+{
+	width: 40vw;
+}
+
+/******** DESIGNATED SECTIONS ********/
+
+#SEC01
+{
+	height:						100vh;
+	
+	grid-area: 					"#SEC01";
+	
+	display: 					flex;
+	justify-content: 			center;
+	align-items: 				center;
+	/*background-image:			url("../ASSETS/BACKGROUNDS/LANDSCAPES/VERTICAL(VRT)/BGL_VRT_400-800_MOON_SML_V1.jpg");
+	background-repeat: 			no-repeat;
+	background-size: 			contain;
+	*/
+	
+}
+
+#SEC02
+{
+	display:					none;
+	
+	background-image: 			url("../ASSETS/BACKGROUNDS/LANDSCAPES/VERTICAL(VRT)/BGL_MOON_320-128_VRT_V1.jpg");
+	background-repeat:			no-repeat;
+	background-size:			cover;
+}
+
+#SEC03
+{
+	display:					none;
+	margin:						2vh 0 2vh 0;
+}
+
+#SEC04
+{
+	display:					none;
+	
+	
+}
+
+#SEC05
+{
+	display:					flex;
+	justify-content: 			center;
+	
+	margin:						3vh 0 3vh 0;
+}
+
+
+
+
+/******** LAYOUT CONTAINERS ********/
+
+#LOC01
+{
+	display:					flex;
+	flex-direction: 			column;
+	justify-content: 			space-around;
+	align-items: 				center;
+}
+
+#LOC02
+{
+	display:					flex;
+	justify-content: 			center;
+	align-items: 				center;
+}
+
+#LOC03
+{
+	display:				flex;
+	justify-content: 		center;
+	margin:					2vh 0 0 0;
+}
+
+#LOC04
+{
+
+	margin-top:				2vh;
+}
+
+
+/******** HEADINGS FONTS & TEXT ********/
+
+h1
+{
+	text-shadow: 				2px 2px black;
+	font-family:		 		'Audiowide', cursive;
+	font-size:					7vh;
+	color:						gray;
+	opacity:					.3;
+}
+
+.H2T01
+{
+	display:					none;
+	font-family:		 		'Audiowide', cursive;
+	font-size:					8vh;
+	color:						gray;
+}
+
+.H2T02
+{
+	display:					none;
+	font-family:		 		'Audiowide', cursive;
+	font-size:					5vh;
+	color:						gray;
+}
+
+.H3T01
+{
+	text-align: 				center;
+	font-family: 				'Poiret One', cursive;
+	font-size:					4vh;
+	color:						darkgray;
+}
+
+.H4T01
+{
+	text-align: 				center;
+	font-family: 				'Poiret One', cursive;
+	font-size:					2.25vh;
+	color:						gray;
+}
+
+
+
+
+/******** LOGOS ********/
+
+#INT01_LOG01
+{
+	display:					none;
+	
+	height:						17vh;
+}
+
+.LOGT02
+{
+	margin:						0 2vw 0 2vw;
+}
+
+
+/******** BUTTONS ********/
+
+.BTNT01
+{					
+	display:					none;
+	
+	width: 						50vw;
+	padding:					1.5vh 0 2vh 0;
+	border:						none;
+	
+	font-family:		 		'Audiowide', cursive;
+	font-size:					3.5vh;
+	color:						gray;
+	opacity:					.4;
+	
+	background-image:			url("../ASSETS/BUTTONS/BTN_HOR_189-062_BLUBKLT_V1.png");
+	background-repeat: 			no-repeat;
+	background-size:			cover;
+}
+
+
+/******** MEDIA QUERIES ********/
+
+@media (min-width: 450px)
+{
+	#SEC02
+	{
+	
+		background-image:				url("../ASSETS/BACKGROUNDS/LANDSCAPES/VERTICAL(VRT)/BGL_MOON_1280-515_VRT_V1.jpg");
+		background-repeat:				no-repeat;
+		background-size:				contain;
+	}
+}
